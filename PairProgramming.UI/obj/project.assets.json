@@ -15,6 +15,9 @@
       "PairProgramming.Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "PairProgramming.POCOs": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/PairProgramming.Repositories.dll": {}
         },

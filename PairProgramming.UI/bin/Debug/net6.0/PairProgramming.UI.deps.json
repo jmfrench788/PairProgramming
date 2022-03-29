@@ -21,6 +21,9 @@
         }
       },
       "PairProgramming.Repositories/1.0.0": {
+        "dependencies": {
+          "PairProgramming.POCOs": "1.0.0"
+        },
         "runtime": {
           "PairProgramming.Repositories.dll": {}
         }

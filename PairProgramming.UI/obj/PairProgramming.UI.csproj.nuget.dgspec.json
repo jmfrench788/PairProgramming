@@ -77,7 +77,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\julia\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\PairProgramming\\PairProgramming.POCOs\\PairProgramming.POCOs.csproj": {
+                "projectPath": "C:\\Users\\julia\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\PairProgramming\\PairProgramming.POCOs\\PairProgramming.POCOs.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

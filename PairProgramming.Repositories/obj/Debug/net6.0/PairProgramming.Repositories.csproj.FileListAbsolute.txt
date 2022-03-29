@@ -10,3 +10,6 @@ C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\Pa
 C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\obj\Debug\net6.0\refint\PairProgramming.Repositories.dll
 C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\obj\Debug\net6.0\PairProgramming.Repositories.pdb
 C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\obj\Debug\net6.0\ref\PairProgramming.Repositories.dll
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\bin\Debug\net6.0\PairProgramming.POCOs.dll
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\bin\Debug\net6.0\PairProgramming.POCOs.pdb
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\obj\Debug\net6.0\PairProgramming.Repositories.csproj.CopyComplete

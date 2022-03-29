@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "PairProgramming.Repositories/1.0.0": {
+        "dependencies": {
+          "PairProgramming.POCOs": "1.0.0"
+        },
         "runtime": {
           "PairProgramming.Repositories.dll": {}
+        }
+      },
+      "PairProgramming.POCOs/1.0.0": {
+        "runtime": {
+          "PairProgramming.POCOs.dll": {}
         }
       }
     }
   },
   "libraries": {
     "PairProgramming.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PairProgramming.POCOs/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
