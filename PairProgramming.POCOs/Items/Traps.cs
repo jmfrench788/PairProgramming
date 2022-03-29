@@ -8,15 +8,18 @@ using System.Threading.Tasks;
     {
         public Traps(){}
 
-        public Traps(TrapType trapType, bool loseLife, bool backToStart)
+        public Traps(TrapType trapType, bool loseLife, bool backToStart, int scoreLost)
         {
             TrapType = trapType;
             LoseLife = loseLife;
             BackToStart = backToStart;
+            ScoreLost = scoreLost;
         }
 
         public TrapType TrapType{get; set;}
         public bool BackToStart{get; set;}
 
         public bool LoseLife{get; set;}
+
+        public int ScoreLost{get; set;}
     }

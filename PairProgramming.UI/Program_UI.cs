@@ -215,7 +215,7 @@ using System.Threading.Tasks;
 
     private void SeedData()
     {
-        var player = new Player(2);
+        var player = new Player(2, 200);
     }
 
     private bool CloseApplication()
