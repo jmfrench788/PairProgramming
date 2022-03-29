@@ -18,8 +18,11 @@ using System.Threading.Tasks;
         bool isRunning = true;
         while(isRunning)
         {
-            System.Console.WriteLine("Info: You can enter 0 to exit at any time.");
-            System.Console.WriteLine("You wake up in an empty room. You seem to be in room 30. There are 2 doors labeled 6 and 17. Which one would you like to enter?");
+            System.Console.WriteLine("Info: You can enter 0 to go back to the start at any time.");
+            System.Console.WriteLine("                                             ");
+            System.Console.WriteLine("You wake up in an empty room. You seem to be in room 30. There are 2 doors labeled 6 and 17. Which one would you like to enter? (To exit the game, press 0.)");
+            
+
             var input = Console.ReadLine();
 
             switch(input)
@@ -45,7 +48,7 @@ using System.Threading.Tasks;
         }
     }
 
-      private void Cube30()
+    private void Cube30()
     {
        System.Console.WriteLine("You are in room 30. There are doors labeled 6 and 17. Which would you like to enter?");
        var input = Console.ReadLine();
@@ -100,7 +103,7 @@ using System.Threading.Tasks;
             break;
 
             case "0":
-            CloseApplication();
+            ReturnToStart();
             break;
 
             default:
@@ -221,7 +224,15 @@ using System.Threading.Tasks;
     private bool CloseApplication()
     {
         Console.Clear();
-        System.Console.WriteLine("Thanks!!!");
+        System.Console.WriteLine("Thanks for playing.");
+        PressAnyKeyToContinue();
+        return false;
+    }
+
+     private bool ReturnToStart()
+    {
+        Console.Clear();
+        System.Console.WriteLine("You have returned to the start.");
         PressAnyKeyToContinue();
         return false;
     }
