@@ -1,0 +1,12 @@
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\bin\Debug\net6.0\PairProgramming.Repositories.deps.json
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\bin\Debug\net6.0\PairProgramming.Repositories.dll
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\bin\Debug\net6.0\PairProgramming.Repositories.pdb
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\obj\Debug\net6.0\PairProgramming.Repositories.csproj.AssemblyReference.cache
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\obj\Debug\net6.0\PairProgramming.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\obj\Debug\net6.0\PairProgramming.Repositories.AssemblyInfoInputs.cache
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\obj\Debug\net6.0\PairProgramming.Repositories.AssemblyInfo.cs
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\obj\Debug\net6.0\PairProgramming.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\obj\Debug\net6.0\PairProgramming.Repositories.dll
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\obj\Debug\net6.0\refint\PairProgramming.Repositories.dll
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\obj\Debug\net6.0\PairProgramming.Repositories.pdb
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.Repositories\obj\Debug\net6.0\ref\PairProgramming.Repositories.dll

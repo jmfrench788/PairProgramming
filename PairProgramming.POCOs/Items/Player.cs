@@ -8,10 +8,10 @@ using System.Threading.Tasks;
     {
         public Player(){}
 
-        public Player(int health)
+        public Player(int lives)
         {
-            Health = health;
+            Lives = lives;
         }
 
-        public int Health{get; set;}
+        public int Lives{get; set;}
     }

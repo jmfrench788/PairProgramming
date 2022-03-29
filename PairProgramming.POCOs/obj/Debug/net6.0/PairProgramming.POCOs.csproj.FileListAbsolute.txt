@@ -1,0 +1,12 @@
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.POCOs\bin\Debug\net6.0\PairProgramming.POCOs.deps.json
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.POCOs\bin\Debug\net6.0\PairProgramming.POCOs.dll
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.POCOs\bin\Debug\net6.0\PairProgramming.POCOs.pdb
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.POCOs\obj\Debug\net6.0\PairProgramming.POCOs.csproj.AssemblyReference.cache
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.POCOs\obj\Debug\net6.0\PairProgramming.POCOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.POCOs\obj\Debug\net6.0\PairProgramming.POCOs.AssemblyInfoInputs.cache
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.POCOs\obj\Debug\net6.0\PairProgramming.POCOs.AssemblyInfo.cs
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.POCOs\obj\Debug\net6.0\PairProgramming.POCOs.csproj.CoreCompileInputs.cache
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.POCOs\obj\Debug\net6.0\PairProgramming.POCOs.dll
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.POCOs\obj\Debug\net6.0\refint\PairProgramming.POCOs.dll
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.POCOs\obj\Debug\net6.0\PairProgramming.POCOs.pdb
+C:\Users\julia\Documents\ElevenFiftyProjects\codingFoundations\dotnetProjects\PairProgramming\PairProgramming.POCOs\obj\Debug\net6.0\ref\PairProgramming.POCOs.dll
