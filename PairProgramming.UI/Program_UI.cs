@@ -26,6 +26,7 @@ using System.Threading.Tasks;
         bool isRunning = true;
         while(isRunning)
         {
+            System.Console.WriteLine("              ");
             System.Console.WriteLine("Info: You can enter 0 to go back to the start at any time.");
             System.Console.WriteLine("                                             ");
             System.Console.WriteLine("You wake up in an empty room. You seem to be in room 30. There are 2 doors labeled 6 and 17. Which one would you like to enter? \n" +
@@ -62,6 +63,7 @@ using System.Threading.Tasks;
        //add score
     
         System.Console.WriteLine("         ");
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
        System.Console.WriteLine("You are in room 30. There are doors labeled 6 and 17. Which would you like to enter?");
        var input = Console.ReadLine();
 
@@ -91,8 +93,9 @@ using System.Threading.Tasks;
     private void Cube17()
     {
         System.Console.WriteLine("         ");
+        Console.ForegroundColor=ConsoleColor.Red;
         System.Console.WriteLine("You ran into a spike trap and lost a life.");
-        
+        Console.ResetColor();
         UpdatePlayerInfo(player, 1, 100);
 
         if(player.Lives == 0)
@@ -316,8 +319,10 @@ using System.Threading.Tasks;
     private void Cube97()
     {
         System.Console.WriteLine("         ");
-        System.Console.WriteLine("You fell into a trap and have been put back at the start.");
-        UpdatePlayerInfo(player, 0, 400);
+        Console.ForegroundColor=ConsoleColor.Blue;
+        System.Console.WriteLine("You ran into a trap and were teleported back to the start.");
+        Console.ResetColor();
+        UpdatePlayerInfo(player, 0, 150);
         Cube30();
     }
 
@@ -437,7 +442,9 @@ using System.Threading.Tasks;
     private void Cube73()
     {
         System.Console.WriteLine("         ");
+        Console.ForegroundColor=ConsoleColor.Red;
         System.Console.WriteLine("You ran into a spike trap and lost a life.");
+        Console.ResetColor();
         
         UpdatePlayerInfo(player, 1, 100);
 
@@ -498,7 +505,9 @@ using System.Threading.Tasks;
     private void Cube2()
     {
         System.Console.WriteLine("         ");
+        Console.ForegroundColor=ConsoleColor.Red;
         System.Console.WriteLine("You ran into a spike trap and lost a life.");
+        Console.ResetColor();
         
         UpdatePlayerInfo(player, 1, 100);
 
@@ -678,10 +687,11 @@ using System.Threading.Tasks;
         
         if(player.HasKey)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             System.Console.WriteLine("YOU FOUND THE EXIT!");
             System.Console.WriteLine("WINNER!!");
             AddScore(player, player.Lives*100);
-        
+            Console.ResetColor();
             System.Console.WriteLine($"Score: {player.Score}");
             if(player.Score >=1000)
             {
@@ -707,7 +717,9 @@ using System.Threading.Tasks;
             {
                 System.Console.WriteLine("You got an F ranking (the lowest ranking). You can do better . . . or, you are just trash. Git gud.");
             }
-
+            System.Console.WriteLine("        ");
+            System.Console.WriteLine("Retsarting the game.");
+            NewPlayer(player, 2, 200, false);
             
             PressAnyKeyToContinue();
         }
@@ -750,8 +762,10 @@ using System.Threading.Tasks;
     private void Cube67()
     {
         System.Console.WriteLine("         ");
-        System.Console.WriteLine("You fell into a trap and have been put back at the start.");
-        UpdatePlayerInfo(player, 0, 400);
+        Console.ForegroundColor=ConsoleColor.Blue;
+        System.Console.WriteLine("You ran into a trap and were teleported back to the start.");
+        Console.ResetColor();
+        UpdatePlayerInfo(player, 0, 150);
         Cube30();
     }
 
@@ -764,7 +778,7 @@ using System.Threading.Tasks;
         AddKey(player, true);
         //key location, update player.HasKey
         //44,67,53
-        System.Console.WriteLine("YOU FOUND THE EXIT KEY!");
+        System.Console.WriteLine("---YOU FOUND THE EXIT KEY!---");
         System.Console.WriteLine("The room is safe. There are doors labeled 44, 67, and 53. Which one would you like to enter?");
         var input = Console.ReadLine();
 
@@ -805,7 +819,9 @@ using System.Threading.Tasks;
       System.Console.WriteLine("         ");
         //Trap lose 1 life
         //29,10,86
+        Console.ForegroundColor=ConsoleColor.Red;
         System.Console.WriteLine("You ran into a spike trap and lost a life.");
+        Console.ResetColor();
         
         UpdatePlayerInfo(player, 1, 100);
 
@@ -861,7 +877,9 @@ using System.Threading.Tasks;
     private void Cube29()
     {
         System.Console.WriteLine("         ");
+        Console.ForegroundColor=ConsoleColor.Red;
         System.Console.WriteLine("You ran into a spike trap and lost a life.");
+        Console.ResetColor();
         
         UpdatePlayerInfo(player, 1, 100);
 
