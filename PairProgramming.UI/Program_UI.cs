@@ -91,20 +91,52 @@ using System.Threading.Tasks;
         
         System.Console.WriteLine("You ran into a spike trap and lost a life.");
         
+        UpdatePlayerInfo(player, 1, 100);
+
+        if(player.Lives == 0)
+        {
+            
+            System.Console.WriteLine("YOU DIED--STARTING OVER");
+            PressAnyKeyToContinue();
+            ReturnToStart();
+            Player player = new Player(2,200,false);
+            
+            
+        }
+    
+      else
+        {
+
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
+
+        System.Console.WriteLine("There are doors labeled 30 and 100. Which one would you like to enter?");
+        var input = Console.ReadLine();
+
+        switch(input)
+        {
+            case "30":
+            Cube30();
+            break;
+
+            case "100":
+            Cube100();
+            break;
+
+            case "0":
+            ReturnToStart();
+            break;
+
+            default:
+            System.Console.WriteLine("Invalid Selection");
+            PressAnyKeyToContinue();
+            Cube6();
+            break;
+        }
+
+        }
         
-        int currentLives = player.Lives;
-        int currentScore = player.Score;
-
-        int newLives = player.Lives -1;
-        int newScore = player.Score - 100;
-
-        _pRepo.UpdatePlayer(newLives, newScore);
-
-        System.Console.WriteLine($"Lives: {newLives} Score: {newScore}");
-
         
 
-        
         
         //SPIKE TRAP
         //Lose 1 life, update player lives
@@ -112,13 +144,25 @@ using System.Threading.Tasks;
         //add other rooms
     }
 
-   
+    private void UpdatePlayerInfo(Player player, int livesLost, int scoreDown)
+    {
+        player.HasEnteredTrap(livesLost, scoreDown);
+      
+    }
 
-  
+    private void AddScore(Player player, int scoreUp)
+    {
+        player.EnteredSafeRoom(scoreUp);
+    }
 
     private void Cube6()
     {
+        AddScore(player, 50 );
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
+        
+
         System.Console.WriteLine("The room is safe. There are doors labeled 30, 99, and 100. Which one would you like to enter?");
+
         var input = Console.ReadLine();
 
         switch(input)
@@ -152,6 +196,8 @@ using System.Threading.Tasks;
 
     private void Cube100()
     {
+        AddScore(player, 50 );
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
         System.Console.WriteLine("The room is safe. There are doors labeled 6, 17, 73, and 97. Which one would you like to enter?");
         var input = Console.ReadLine();
 
@@ -188,6 +234,9 @@ using System.Threading.Tasks;
 
     private void Cube99()
     {
+         AddScore(player, 50 );
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
+
           System.Console.WriteLine("The room is safe. There are doors labeled 6, 97, and 150. Which one would you like to enter?");
         var input = Console.ReadLine();
 
@@ -222,7 +271,10 @@ using System.Threading.Tasks;
 
   private void Cube150()
     {
-          System.Console.WriteLine("The room is safe. There are doors labeled 99 and 25. Which one would you like to enter?");
+        AddScore(player, 50 );
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
+
+        System.Console.WriteLine("The room is safe. There are doors labeled 99 and 25. Which one would you like to enter?");
         var input = Console.ReadLine();
 
         switch(input)
@@ -260,6 +312,8 @@ using System.Threading.Tasks;
 
     private void Cube25()
     {
+         AddScore(player, 50 );
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
         //150,33,97
         System.Console.WriteLine("The room is safe. There are doors labeled 150, 33 and 97. Which one would you like to enter?");
         var input = Console.ReadLine();
@@ -293,6 +347,8 @@ using System.Threading.Tasks;
 
     private void Cube33()
     {
+         AddScore(player, 50 );
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
         //25,55,2
         System.Console.WriteLine("The room is safe. There are doors labeled 25, 55 and 2. Which one would you like to enter?");
         var input = Console.ReadLine();
@@ -327,6 +383,8 @@ using System.Threading.Tasks;
 
     private void Cube55()
     {
+         AddScore(player, 50 );
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
         //73,97,33,44
         System.Console.WriteLine("The room is safe. There are doors labeled 73, 33, 44 and 97. Which one would you like to enter?");
         var input = Console.ReadLine();
@@ -364,21 +422,125 @@ using System.Threading.Tasks;
 
     private void Cube73()
     {
-        System.Console.WriteLine("You have walked into a spike trap and lost a life!");
+        System.Console.WriteLine("You ran into a spike trap and lost a life.");
+        
+        UpdatePlayerInfo(player, 1, 100);
+
+        if(player.Lives == 0)
+        {
+            
+            System.Console.WriteLine("YOU DIED--STARTING OVER");
+            PressAnyKeyToContinue();
+            ReturnToStart();
+            Player player = new Player(2,200,false);
+            
+            
+        }
+    
+      else
+        {
+
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
+
+        System.Console.WriteLine("There are doors labeled 100, 15, 10, and 55. Which one would you like to enter?");
+        var input = Console.ReadLine();
+
+        switch(input)
+        {
+            case "10":
+            Cube10();
+            break;
+
+            case "100":
+            Cube100();
+            break;
+
+            case "15":
+            Cube15();
+            break;
+
+            case "55":
+            Cube55();
+            break;
+
+            case "0":
+            ReturnToStart();
+            break;
+
+            default:
+            System.Console.WriteLine("Invalid Selection");
+            PressAnyKeyToContinue();
+            Cube6();
+            break;
+        }
+
+        }
+        
         //trap lose 1 life
         //100,15,10,55
     }
 
     private void Cube2()
     {
-        System.Console.WriteLine("You have walked into a spike trap and lost a life!");
-        //trap lose 1 life;
+        System.Console.WriteLine("You ran into a spike trap and lost a life.");
+        
+        UpdatePlayerInfo(player, 1, 100);
+
+        if(player.Lives == 0)
+        {
+            
+            System.Console.WriteLine("YOU DIED--STARTING OVER");
+            PressAnyKeyToContinue();
+            ReturnToStart();
+            Player player = new Player(2,200,false);
+            
+            
+        }
+    
+      else
+        {
+
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
+
+        System.Console.WriteLine("There are doors labeled 33, 44, and 67. Which one would you like to enter?");
+        var input = Console.ReadLine();
+
+        switch(input)
+        {
+            case "33":
+            Cube33();
+            break;
+
+            case "44":
+            Cube44();
+            break;
+
+            case "67":
+            Cube67();
+            break;
+
+            
+
+            case "0":
+            ReturnToStart();
+            break;
+
+            default:
+            System.Console.WriteLine("Invalid Selection");
+            PressAnyKeyToContinue();
+            Cube6();
+            break;
+        }
+
+        }
+        
         //33,44,67
     }
 
     private void Cube44()
     {
-        
+        AddScore(player, 50 );
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}"); 
         //55,10,2,86
         System.Console.WriteLine("The room is safe. There are doors labeled 55, 10, 2 and 86. Which one would you like to enter?");
         var input = Console.ReadLine();
@@ -416,6 +578,8 @@ using System.Threading.Tasks;
 
     private void Cube10()
     {
+         AddScore(player, 50 );
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
         //73,44,4,53
         System.Console.WriteLine("The room is safe. There are doors labeled 73, 44, 4 and 53. Which one would you like to enter?");
         var input = Console.ReadLine();
@@ -453,6 +617,8 @@ using System.Threading.Tasks;
 
     private void Cube4()
     {
+         AddScore(player, 50 );
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
         //15,10,29 
         System.Console.WriteLine("The room is safe. There are doors labeled 15, 10, and 29. Which one would you like to enter?");
         var input = Console.ReadLine();
@@ -486,6 +652,23 @@ using System.Threading.Tasks;
 
     private void Cube15()
     {
+        AddScore(player, 50 );
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
+        System.Console.WriteLine("                                ");
+        
+        if(player.HasKey)
+        {
+            System.Console.WriteLine("YOU FOUND THE EXIT!");
+            System.Console.WriteLine("WINNER!!");
+            AddScore(player, player.Lives*100);
+        
+            System.Console.WriteLine($"Score: {player.Score}");
+            
+            PressAnyKeyToContinue();
+        }
+        else
+        {
+        System.Console.WriteLine("You found the exit, but you do not have the key to unlock it.");
         System.Console.WriteLine("The room is safe. There are doors labeled 73, 4, and 17. Which one would you like to enter?");
         var input = Console.ReadLine();
 
@@ -513,13 +696,15 @@ using System.Threading.Tasks;
             Cube6();
             break;
 
-    }
+            }
+        }
         //END, need key to exit
         //73,4,17
     }
 
     private void Cube67()
     {
+        
         System.Console.WriteLine("You fell into a trap and have been put back at the start.");
 
         Cube30();
@@ -527,6 +712,10 @@ using System.Threading.Tasks;
 
     private void Cube86()
     {
+        AddScore(player, 50 );
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
+
+        AddKey(player, true);
         //key location, update player.HasKey
         //44,67,53
         System.Console.WriteLine("YOU FOUND THE EXIT KEY!");
@@ -560,16 +749,117 @@ using System.Threading.Tasks;
     }
     }
 
+    private void AddKey(Player player, bool gotKey)
+    {
+        player.HasKey = gotKey;
+    }
+
     private void Cube53()
     {
-        System.Console.WriteLine("You have walked into a spike trap and lost a life!");
+      
         //Trap lose 1 life
         //29,10,86
+        System.Console.WriteLine("You ran into a spike trap and lost a life.");
+        
+        UpdatePlayerInfo(player, 1, 100);
+
+        if(player.Lives == 0)
+        {
+            
+            System.Console.WriteLine("YOU DIED--STARTING OVER");
+            PressAnyKeyToContinue();
+            ReturnToStart();
+            Player player = new Player(2,200,false);
+            
+            
+        }
+    
+      else
+        {
+
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
+
+        System.Console.WriteLine("There are doors labeled 29, 10, and 86. Which one would you like to enter?");
+        var input = Console.ReadLine();
+
+        switch(input)
+        {
+            case "29":
+            Cube29();
+            break;
+
+            case "10":
+            Cube10();
+            break;
+
+            case "86":
+            Cube86();
+            break;
+
+            
+
+            case "0":
+            ReturnToStart();
+            break;
+
+            default:
+            System.Console.WriteLine("Invalid Selection");
+            PressAnyKeyToContinue();
+            Cube6();
+            break;
+        }
+
+        }
     }
 
     private void Cube29()
     {
-        System.Console.WriteLine("You have walked into a spike trap and lost a life!");
+        System.Console.WriteLine("You ran into a spike trap and lost a life.");
+        
+        UpdatePlayerInfo(player, 1, 100);
+
+        if(player.Lives == 0)
+        {
+            
+            System.Console.WriteLine("YOU DIED--STARTING OVER");
+            PressAnyKeyToContinue();
+            ReturnToStart();
+            Player player = new Player(2,200,false);
+            
+            
+        }
+    
+      else
+        {
+
+        System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
+
+        System.Console.WriteLine("There are doors labeled 4 and 53. Which one would you like to enter?");
+        var input = Console.ReadLine();
+
+        switch(input)
+        {
+            case "4":
+            Cube4();
+            break;
+
+            case "53":
+            Cube53();
+            break;
+
+        
+            case "0":
+            ReturnToStart();
+            break;
+
+            default:
+            System.Console.WriteLine("Invalid Selection");
+            PressAnyKeyToContinue();
+            Cube6();
+            break;
+        }
+
+        }
         //Trap, lose 1 life
         //4,53
     }

@@ -20,4 +20,23 @@ using System.Threading.Tasks;
         public int Score{get; set;}
 
         public bool HasKey{get;set;}
+
+        public void HasEnteredTrap(int livesLost, int scoreDown)
+        {
+            this.Lives -=livesLost;
+            this.Score -= scoreDown;
+        }
+
+        public void EnteredSafeRoom(int scoreUp)
+        {
+            this.Score += scoreUp;
+        }
+
+        public void HasTheKey(bool gotKey)
+        {
+            this.HasKey = gotKey;
+        }
+
+
+
     }
