@@ -28,7 +28,8 @@ using System.Threading.Tasks;
         {
             System.Console.WriteLine("Info: You can enter 0 to go back to the start at any time.");
             System.Console.WriteLine("                                             ");
-            System.Console.WriteLine("You wake up in an empty room. You seem to be in room 30. There are 2 doors labeled 6 and 17. Which one would you like to enter? (To exit the game, press 0.)");
+            System.Console.WriteLine("You wake up in an empty room. You seem to be in room 30. There are 2 doors labeled 6 and 17. Which one would you like to enter? \n" +
+            "--To exit the game, press 0.--");
             
 
             var input = Console.ReadLine();
@@ -59,7 +60,8 @@ using System.Threading.Tasks;
     private void Cube30()
     {
        //add score
-      
+    
+        System.Console.WriteLine("         ");
        System.Console.WriteLine("You are in room 30. There are doors labeled 6 and 17. Which would you like to enter?");
        var input = Console.ReadLine();
 
@@ -88,7 +90,7 @@ using System.Threading.Tasks;
 
     private void Cube17()
     {
-        
+        System.Console.WriteLine("         ");
         System.Console.WriteLine("You ran into a spike trap and lost a life.");
         
         UpdatePlayerInfo(player, 1, 100);
@@ -147,6 +149,7 @@ using System.Threading.Tasks;
     private void UpdatePlayerInfo(Player player, int livesLost, int scoreDown)
     {
         player.HasEnteredTrap(livesLost, scoreDown);
+        
       
     }
 
@@ -157,6 +160,7 @@ using System.Threading.Tasks;
 
     private void Cube6()
     {
+        System.Console.WriteLine("         ");
         AddScore(player, 50 );
         System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
         
@@ -196,6 +200,7 @@ using System.Threading.Tasks;
 
     private void Cube100()
     {
+        System.Console.WriteLine("         ");
         AddScore(player, 50 );
         System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
         System.Console.WriteLine("The room is safe. There are doors labeled 6, 17, 73, and 97. Which one would you like to enter?");
@@ -234,6 +239,7 @@ using System.Threading.Tasks;
 
     private void Cube99()
     {
+        System.Console.WriteLine("         ");
          AddScore(player, 50 );
         System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
 
@@ -267,10 +273,9 @@ using System.Threading.Tasks;
         //6,97,150
     }
 
-  
-
-  private void Cube150()
+    private void Cube150()
     {
+        System.Console.WriteLine("         ");
         AddScore(player, 50 );
         System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
 
@@ -303,15 +308,17 @@ using System.Threading.Tasks;
         //99,25
     }
 
-     private void Cube97()
+    private void Cube97()
     {
+        System.Console.WriteLine("         ");
         System.Console.WriteLine("You fell into a trap and have been put back at the start.");
-
+        UpdatePlayerInfo(player, 0, 400);
         Cube30();
     }
 
     private void Cube25()
     {
+        System.Console.WriteLine("         ");
          AddScore(player, 50 );
         System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
         //150,33,97
@@ -347,6 +354,7 @@ using System.Threading.Tasks;
 
     private void Cube33()
     {
+        System.Console.WriteLine("         ");
          AddScore(player, 50 );
         System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
         //25,55,2
@@ -383,6 +391,7 @@ using System.Threading.Tasks;
 
     private void Cube55()
     {
+        System.Console.WriteLine("         ");
          AddScore(player, 50 );
         System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
         //73,97,33,44
@@ -422,6 +431,7 @@ using System.Threading.Tasks;
 
     private void Cube73()
     {
+        System.Console.WriteLine("         ");
         System.Console.WriteLine("You ran into a spike trap and lost a life.");
         
         UpdatePlayerInfo(player, 1, 100);
@@ -482,6 +492,7 @@ using System.Threading.Tasks;
 
     private void Cube2()
     {
+        System.Console.WriteLine("         ");
         System.Console.WriteLine("You ran into a spike trap and lost a life.");
         
         UpdatePlayerInfo(player, 1, 100);
@@ -539,6 +550,7 @@ using System.Threading.Tasks;
 
     private void Cube44()
     {
+        System.Console.WriteLine("         ");
         AddScore(player, 50 );
         System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}"); 
         //55,10,2,86
@@ -578,6 +590,7 @@ using System.Threading.Tasks;
 
     private void Cube10()
     {
+        System.Console.WriteLine("         ");
          AddScore(player, 50 );
         System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
         //73,44,4,53
@@ -617,6 +630,7 @@ using System.Threading.Tasks;
 
     private void Cube4()
     {
+        System.Console.WriteLine("         ");
          AddScore(player, 50 );
         System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
         //15,10,29 
@@ -652,6 +666,7 @@ using System.Threading.Tasks;
 
     private void Cube15()
     {
+        System.Console.WriteLine("         ");
         AddScore(player, 50 );
         System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
         System.Console.WriteLine("                                ");
@@ -663,6 +678,31 @@ using System.Threading.Tasks;
             AddScore(player, player.Lives*100);
         
             System.Console.WriteLine($"Score: {player.Score}");
+            if(player.Score >=1000)
+            {
+                System.Console.WriteLine("Congratultions, you got a S Ranking!");
+            }
+            else if(player.Score>=900 && player.Score <1000)
+            {
+                System.Console.WriteLine("Congratultions, you got an A Ranking, but you can get a better rank.");
+            }
+             else if(player.Score>=800 && player.Score <900)
+            {
+                System.Console.WriteLine("Congratultions, you got an B Ranking, but you can get a better rank.");
+            }
+              else if(player.Score>=700 && player.Score <800)
+            {
+                System.Console.WriteLine("Congratultions, you got an C Ranking, but you can get a better rank.");
+            }
+             else if(player.Score>=600 && player.Score <700)
+            {
+                System.Console.WriteLine("You got an D Ranking, but you can get a better rank.");
+            }
+            else
+            {
+                System.Console.WriteLine("You got an F ranking (the lowest ranking). You can do better . . . or, you are just trash. Git gud.");
+            }
+
             
             PressAnyKeyToContinue();
         }
@@ -704,14 +744,15 @@ using System.Threading.Tasks;
 
     private void Cube67()
     {
-        
+        System.Console.WriteLine("         ");
         System.Console.WriteLine("You fell into a trap and have been put back at the start.");
-
+        UpdatePlayerInfo(player, 0, 400);
         Cube30();
     }
 
     private void Cube86()
     {
+        System.Console.WriteLine("         ");
         AddScore(player, 50 );
         System.Console.WriteLine($"Lives: {player.Lives} Score: {player.Score}");
 
@@ -756,7 +797,7 @@ using System.Threading.Tasks;
 
     private void Cube53()
     {
-      
+      System.Console.WriteLine("         ");
         //Trap lose 1 life
         //29,10,86
         System.Console.WriteLine("You ran into a spike trap and lost a life.");
@@ -814,6 +855,7 @@ using System.Threading.Tasks;
 
     private void Cube29()
     {
+        System.Console.WriteLine("         ");
         System.Console.WriteLine("You ran into a spike trap and lost a life.");
         
         UpdatePlayerInfo(player, 1, 100);
@@ -888,7 +930,7 @@ using System.Threading.Tasks;
         return false;
     }
 
-     private bool ReturnToStart()
+    private bool ReturnToStart()
     {
         Console.Clear();
         System.Console.WriteLine("You have returned to the start.");
