@@ -26,7 +26,54 @@ using System.Threading.Tasks;
         bool isRunning = true;
         while(isRunning)
         {
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            System.Console.WriteLine(".----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.");
+            System.Console.WriteLine("| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |");
+            System.Console.WriteLine("| | _____  _____ | || |  _________   | || |   _____      | || |     ______   | || |     ____     | || | ____    ____ | || |  _________   | |");
+            System.Console.WriteLine("| ||_   _||_   _|| || | |_   ___  |  | || |  |_   _|     | || |   .' ___  |  | || |   .'    `.   | || ||_   |  /   _|| || | |_   ___  |  | |");
+            System.Console.WriteLine("| |  | | /| | |  | || |   | |_  |_|  | || |    | |       | || |  | .'   |_|  | || |  |  .--.  |  | || |  |  |__|  |  | || |   | |_  |_|  | |");
+            System.Console.WriteLine("| |  | |/ | | |  | || |   |  _|  _   | || |    | |   _   | || |  | |         | || |  | |    | |  | || |  |  _  _  |  | || |   |  _|  _   | |");
+            System.Console.WriteLine("| |  |   /|   |  | || |  _| |___/ |  | || |   _| |__/ |  | || |  |`.___.' |  | || |  |  `--'  |  | || | _| |_||_| |_ | || |  _| |___/ |  | |");
+            System.Console.WriteLine("| |  |__/ | __|  | || | |_________|  | || |  |________|  | || |   `._____.'  | || |   `.____.'   | || ||_____||_____|| || | |_________|  | |");
+            System.Console.WriteLine("| |              | || |              | || |              | || |              | || |              | || |              | || |              | |");
+            System.Console.WriteLine("| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |");
+            System.Console.WriteLine(" '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' ");
+            System.Console.WriteLine("         ");
+            System.Console.WriteLine("         ");
+          
+
+
+            System.Console.WriteLine("                .----------------.  .----------------.          .----------------.  .----------------.  .----------------. ");
+            System.Console.WriteLine("               | .--------------. || .--------------. |        | .--------------. || .--------------. || .--------------. |");
+            System.Console.WriteLine("               | |  _________   | || |     ____     | |        | |  _________   | || |  ____  ____  | || |  _________   | |");
+            System.Console.WriteLine("               | | |  _   _  |  | || |   .'    `.   | |        | | |  _   _  |  | || | |_   ||   _| | || | |_   ___  |  | |");
+            System.Console.WriteLine("               | | |_| | | |_|  | || |  |  .--.  |  | |        | | |_| | | |_|  | || |   | |__| |   | || |   | |_  |_|  | |");
+            System.Console.WriteLine("               | |     | |      | || |  | |    | |  | |        | |     | |      | || |   |  __  |   | || |   |  _|  _   | |");
+            System.Console.WriteLine("               | |    _| |_     | || |  |  `--'  |  | |        | |    _| |_     | || |  _| |  | |_  | || |  _| |___/ |  | |");
+            System.Console.WriteLine("               | |   |_____|    | || |   `.____.'   | |        | |   |_____|    | || | |____||____| | || | |_________|  | |");
+            System.Console.WriteLine("               | |              | || |              | |        | |              | || |              | || |              | |");
+            System.Console.WriteLine("               | '--------------' || '--------------' |        | '--------------' || '--------------' || '--------------' |");
+            System.Console.WriteLine("                '----------------'  '----------------'          '----------------'  '----------------'  '----------------' ");
+            System.Console.WriteLine("    ");
+            System.Console.WriteLine("  ");
+
+            System.Console.WriteLine("                             .----------------.  .----------------.  .----------------.  .----------------. ");
+            System.Console.WriteLine("                            | .--------------. || .--------------. || .--------------. || .--------------. |");
+            System.Console.WriteLine("                            | |     ______   | || | _____  _____ | || |   _______    | || |  _________   | |");
+            System.Console.WriteLine("                            | |   .' ___  |  | || ||_   _||_   _|| || |  |_   _  |   | || | |_   ___  |  | |");
+            System.Console.WriteLine("                            | |  | .'   |_|  | || |  | |    | |  | || |    | |_) |   | || |   | |_  |_|  | |");
+            System.Console.WriteLine("                            | |  | |         | || |  | '    ' |  | || |    |  __'.   | || |   |  _|  _   | |");
+            System.Console.WriteLine("                            | |  | `.___.'|  | || |   | `--' |   | || |   _| |__) |  | || |  _| |___/ |  | |");
+            System.Console.WriteLine("                            | |   `._____.'  | || |    `.__.'    | || |  |________|  | || | |_________|  | |");
+            System.Console.WriteLine("                            | |              | || |              | || |              | || |              | |");
+            System.Console.WriteLine("                            | '--------------' || '--------------' || '--------------' || '--------------' |");
+            System.Console.WriteLine("                             '----------------'  '----------------'  '----------------'  '----------------'");
+
+            Console.ResetColor();
             System.Console.WriteLine("              ");
+            PressAnyKeyToContinue();
+            Console.Clear();
+            System.Console.WriteLine("    ");
             System.Console.WriteLine("Info: You can enter 0 to go back to the start at any time.");
             System.Console.WriteLine("                                             ");
             System.Console.WriteLine("You wake up in an empty room. You seem to be in room 30. There are 2 doors labeled 6 and 17. Which one would you like to enter? \n" +
