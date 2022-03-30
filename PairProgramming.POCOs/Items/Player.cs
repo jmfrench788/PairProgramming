@@ -27,6 +27,13 @@ using System.Threading.Tasks;
             this.Score -= scoreDown;
         }
 
+        public void NewPlayer(int newLives, int newScore, bool keyUpdate)
+        {
+            this.Score = newScore;
+            this.HasKey = keyUpdate;
+            this.Lives = newLives;
+        }
+
         public void EnteredSafeRoom(int scoreUp)
         {
             this.Score += scoreUp;

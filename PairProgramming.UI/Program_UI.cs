@@ -101,7 +101,7 @@ using System.Threading.Tasks;
             System.Console.WriteLine("YOU DIED--STARTING OVER");
             PressAnyKeyToContinue();
             ReturnToStart();
-            Player player = new Player(2,200,false);
+            NewPlayer(player, 2, 200, false);
             
             
         }
@@ -151,6 +151,11 @@ using System.Threading.Tasks;
         player.HasEnteredTrap(livesLost, scoreDown);
         
       
+    }
+
+    private void NewPlayer(Player player, int newLives, int newScore, bool keyUpdate)
+    {
+        player.NewPlayer(newLives, newScore, keyUpdate);
     }
 
     private void AddScore(Player player, int scoreUp)
@@ -442,7 +447,7 @@ using System.Threading.Tasks;
             System.Console.WriteLine("YOU DIED--STARTING OVER");
             PressAnyKeyToContinue();
             ReturnToStart();
-            Player player = new Player(2,200,false);
+            NewPlayer(player, 2, 200, false);
             
             
         }
@@ -503,7 +508,7 @@ using System.Threading.Tasks;
             System.Console.WriteLine("YOU DIED--STARTING OVER");
             PressAnyKeyToContinue();
             ReturnToStart();
-            Player player = new Player(2,200,false);
+            NewPlayer(player, 2, 200, false);
             
             
         }
@@ -810,7 +815,7 @@ using System.Threading.Tasks;
             System.Console.WriteLine("YOU DIED--STARTING OVER");
             PressAnyKeyToContinue();
             ReturnToStart();
-            Player player = new Player(2,200,false);
+            NewPlayer(player, 2, 200, false);
             
             
         }
@@ -866,7 +871,7 @@ using System.Threading.Tasks;
             System.Console.WriteLine("YOU DIED--STARTING OVER");
             PressAnyKeyToContinue();
             ReturnToStart();
-            Player player = new Player(2,200,false);
+            NewPlayer(player, 2, 200, false);
             
             
         }
